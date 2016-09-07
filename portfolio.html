@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title> The portfolio of Olli Kettunen</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-static-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+
+   <!-- <nav class="navbar navbar-default navbar-static-top"> -->
+	<nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	  <a class="navbar-brand" href="#"><img src="kettu.png" alt="Kettu" width="100" height="110" border="0"></a>
+          <a class="navbar-brand" href="#">Olli Kettunen</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_me.html">About me</a></li>
+            <li class="active"><a href="portfolio.html">Portfolio</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Projects<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#bittetris">Bittetris</a></li>
+		  <li><a href="#mooncat">MoonCat: Moonlandia</a></li>
+                  <li><a href="#bet">Betting Analyzer</a></li>
+                  <li><a href="#KD-tree">KD-Tree</a></li>
+		  <li><a href="#phorm">Phorm: Multi-platform Game</a></li>
+		  <li><a href="#router">Router</a></li>
+		  <li><a href="#hipster">Hipster Engine</a></li>
+		  <li><a href="#ik">Inverse Kinematics</a></li>
+     		  <li><a href="#rockthrowing">MultiTouch Demo: RockThrowing</a></li>
+		  <li><a href="#tankbasterds">Tank Basterds: Virtual Reality Environment</a></li>
+		  <li><a href="#bunny">Stanford Bunny</a></li>	
+		  <li><a href="#casino">Casino Card Game</a></li>
+		  <li><a href="#labyrinth">Ball Labyrinth</a></li>		
+		  <li><a href="#raytracer">RayTracer</a></li>
+		  <li><a href="#plant">L-System: Plant</a></li>		
+		  <li><a href="#FFD">FFD: Pipe</a></li>	
+		  <li><a href="#particle">Particle System</a></li>	
+		  <li><a href="#cloth">Cloth: Damper-Spring Mass Model</a></li>	
+                </ul>
+              </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="bittetris"></a>
+        <h1>Bittetris</h1>
+	<p class="blog-post-meta">June, 2016</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://fi.wikipedia.org/wiki/C_sharp" role="button">C#</a>
+	<a class="btn btn-lg btn-primary" href="http://unity3d.com/" role="button">Unity3D</a>
+	<a class="btn btn-lg btn-primary" href="http://www.appstore.com" role="button">App Store</a>
+
+	<p></p>
+
+	<img src="project_pics/bittetris.png" alt="Bittetris" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+        <p>Bittetris is a game I programmed in summer 2016 using <a href="https://fi.wikipedia.org/wiki/C_sharp">C#</a> and <a href="http://unity3d.com/">Unity3D</a>. The name for the game comes from words bitter and tetris since the game is a modified 	tetris where there is a good versus evil (bitterness) theme going on. So called evilminos try to cause trouble to the player the way they do. I implemented basic 	  tetris functionality and two other tetrominos, so called goodmino and evilmino. I added some visual effects to the game, such as animating the tetromino blocks 	color between two colors and shaking the camera as the tetrominos land on the play field. Also added some particle effects. This game is ready to be released in <a href="http://www.appstore.com">App Store</a> and will be my first completely personal released title. I will release it in the store once I can afford to register as a Apple developer which costs 100 USD 		per year. </p>
+        
+	<p>
+
+	<div class="alert alert-success" role="alert">
+        	You can see the code scripts here: <br/> 
+		<a href="data/bittetris/Scripts.zip">Scripts.zip</a>
+      </div>
+	  
+	  	<div class="alert alert-success" role="alert">
+	You can see the gameplay demo video on <a href="https://www.youtube.com/watch?v=Lq0DdqHS4g8">YouTube</a>.
+      </div>
+
+	<div class="alert alert-success" role="alert">
+	You can download the Windows version of the game <a href="https://dl.dropboxusercontent.com/u/59215222/Bittetris/Bittetris.zip">here</a> as zip file.</a>
+      </div>
+
+	</p> 
+
+      </div>
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="mooncat"></a>
+        <h1>MoonCat: Moonlandia</h1>
+	<p class="blog-post-meta">Spring, 2009</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://www.java.com/en/" role="button">Java</a>
+
+	<p></p>
+
+	<img src="project_pics/mooncat.png" alt="MoonCat: Moonlandia" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+ <p>
+			This work was my own hobby in the beginning of the studies. It was implemented in <a href="https://www.java.com/en/">Java</a>. It taught me about 2D graphics, game design, game programming and concurrent programming.
+			I learned that one should not use too many threads in an application because the context switch between the threads takes too much. Moreover, I faced a problem called ConcurrentModificationException as 
+			multiple threads tried to access arrays simultaneously.
+		</p>
+	<p>
+
+	<div class="alert alert-success" role="alert">
+Work is available in <a href="data/mooncat/mooncat.zip">zip</a> file and requires Java Runtime Environment installed.
+      </div>
+
+	<div class="alert alert-success" role="alert">
+Code sample about Mooncat available here: <br/>
+			
+			<a href="data/mooncat/GameWindow.java">GameWindow.java</a>
+      </div>
+
+	</p> 
+
+      </div>
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="bet"></a>
+        <h1>Betting Analyzer</h1>
+	<p class="blog-post-meta">Spring, 2016</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://fi.wikipedia.org/wiki/C_sharp" role="button">C#</a>
+	<a class="btn btn-lg btn-primary" href="http://unity3d.com/" role="button">Unity3D</a>
+
+	<p></p>
+
+	<img src="project_pics/betting.png" alt="Betting Analyzer" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+<p>
+			Betting Analyzer was a app I designed during the spring 2016. The motivation for this app was that I wanted to find out whether it is profitable to bet on sports events (football and ice hockey) 
+			with certain betting strategies. I created an application that downloads archived sports events from the web. Sports events included data from the actual match which is the teams and the result of 
+			the match and also the odds for each result: home win, tie and away win.
+		</p>
+		
+		<p>
+			The betting strategies go as follows: We select a team from a league and start to bet on it. There are 3 cases. Whether we always bet the selected team to win, or to have always a tie game, or always lose.
+			Once we have selected one of these 3 strategies, we have a pattern that we follow in placing the amount of the bet. Constant Bet strategy means that we always place a bet that is a constant regardless of the
+			result of the previous bet. Linear Bet strategy means that we always linearly increase the current bet while we lose the previous bet until we win. Once we win, we start again from the initial bet. 
+			Linear Steep Compensate Bet strategy means same as Linear Bet strategy but in this case we select a number of losses that we are willing to continue linear increase in bets. While we lose more games in a row than 
+			"number of losses" selected, we continue with a steeper increase in bets from that point on until we win. The final strategy is called Exponential Bet strategy. In this strategy we always double the previous bet
+			while we keep losing until we win. 
+		</p>
+		
+		<p>
+			This app analyzes these betting strategies using the archived sports events. We use these strategies to archived sports results as if we had placed bets on them in the past in real. This app renders a graph (for a 
+			selected betting strategy) that consists of discrete points of which each represents a single bet. The graph then tells would we have won money or lost after for instance 30 matches. If the final point in the graph 
+			is on the positive side of X axis, then we would have won some money. Otherwise we lost money and know that there is no use to use that betting strategy on sports events since we would lose money instead of winning 
+			it. 
+		</p>
+
+	<p>
+		    I created the betting analyzer app using <a href="http://unity3d.com/">Unity 3D</a>. This project was a useful mathematical exercise in coding <a href="https://fi.wikipedia.org/wiki/C_sharp">C#</a>. Moreover, I advanced my knowledge about 
+			<a href="http://unity3d.com/">Unity 3D</a>, especially user interface knowledge.
+		</p>
+        
+	<p>
+
+	<div class="alert alert-success" role="alert">
+	You can see the code for the Bet Analyzer app here: <br/> 
+		<a href="data/betting/bet-analyzer.zip">bet-analyzer.zip</a>
+      </div>
+
+	<div class="alert alert-success" role="alert">
+	Bet Analyzer applicaton can be downloaded (Windows) as a zip file from <a href="https://dl.dropboxusercontent.com/u/59215222/BetAnalyzer/BetAnalyzer.zip">here</a>. 
+      </div>
+
+
+	</p> 
+
+      </div>
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="KD-tree"></a>
+        <h1>KD-Tree Acceleration Structure</h1>
+	<p class="blog-post-meta">August, 2015</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://fi.wikipedia.org/wiki/C%2B%2B" role="button">C++</a>
+
+	<p></p>
+
+	<img src="project_pics/KD.png" alt="KD-tree" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+	<p>
+		Implementing a KD-tree acceleration structure for a simple raytracer was an assignment by Frozenbyte for their recruitment process that ultimately never happened in August 2015. During the 
+		assignment I learned to find and fix bugs which had been put into the project to add realism. Moreover, I learned about KD-trees and their importance as an acceleration structure in raytracing. Since I haven't earlier
+		impelemented a real KD-tree, this was a useful exercise. The task was also to compare KD-tree's performance with model files like the dragon. The files had different amounts of polygons.
+		</p>
+		
+		<p>
+		The KD-tree exercise was implemented in <a href="https://fi.wikipedia.org/wiki/C%2B%2B">C++</a>  so this exercise was also about maintaining my C++ skills and having a mathematical problem to solve. 
+		</p>
+
+	<div class="alert alert-success" role="alert">
+	You can see the code for the KD-tree here: <br/> 
+		<a href="data/KD-tree/KD-tree.zip">KD-Tree.zip</a> 
+      </div>
+
+	</p> 
+
+      </div>
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="phorm"></a>
+        <h1>Phorm: Multi-platform Game</h1>
+	<p class="blog-post-meta">November, 2012 - May, 2013</p>
+	
+	<a class="btn btn-lg btn-primary" href="http://getmoai.com/" role="button">MOAI</a>
+	<a class="btn btn-lg btn-primary" href="https://www.lua.org/" role="button">Lua</a>
+
+	<p></p>
+
+	<img src="project_pics/phorm.png" alt="Phorm" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+	<p>
+		 This game was produced during the years 2012-2013 and was started in the Media Lab course Game Project which belongs to Special Module in Game Design and Production. 
+     It was my first game project with a team of six student members. Each student had their own role in the development process. My role was game programming which 
+     included programming game mechanics and in-game level editor. In the course of the course we designed and implemented a game. This game was intended to be a multi-platform
+     game that would run on Android and iOS as well as on PC. Moreover, we implemented a trailer for the game. The 
+     game will also be published in the net for open distribution for free. It was more a portfolio game for us than a commercial one.
+		</p>
+    
+    <p> In the game there is a Phorm called character trying to escape from a laboratory that is built inside a cave. The Phorm was born when a mad scientist moved the soul of the 
+      character to a gelatinous blob that has incredible abilities and can change between three states of matter, solid, jelly and gas at will. The game is puzzle based 2D game. </p>
+    
+		<p>
+      During the game project I learned how it is like to be in a larger game project and co-operate with your team-mates. This module gave me a better view of game design and production. It 
+      also improved my co-operation and English skills while some students were not able to speak Finnish. This project was also about learning from mistakes so that we won't make them again. 
+	  The game was created using <a href="https://www.lua.org/">Lua</a> and game engine called <a href="http://getmoai.com/">MOAI</a>.
+		</p>
+
+	<div class="alert alert-success" role="alert">
+You can visit the home page of Phorm <a href="http://www.phormgame.blogspot.com">here</a>.
+      </div>
+
+	<div class="alert alert-success" role="alert">
+To see the trailer of Phorm click <a href="http://www.youtube.com/embed/DnjRxVl8Hns">here</a>.
+      </div>
+
+	<div class="alert alert-success" role="alert">
+Here is some code samples from the game: <br/> 
+	  <a href="data/phorm/entitymode.lua">entitymode.lua</a> <br/> <a href="data/phorm/piecemode.lua">piecemode.lua</a>
+      </div>
+
+	</p> 
+
+      </div>
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="router"></a>
+        <h1>Router</h1>
+	<p class="blog-post-meta">Spring, 2010</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://fi.wikipedia.org/wiki/C%2B%2B" role="button">C++</a>
+
+	<p></p>
+
+	<img src="project_pics/router.png" alt="Router" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+<p>
+			Router was a project work in Computer Networks course in 2010 in Aalto University. In this project a router builds a routing table according to messages received from other routers through network.
+			I had to implement two protocols, link status and distance vector protocols. In this project I learned about routing and networking. I also learned how to use sockets. Routers were implemented in 
+			<a href="https://fi.wikipedia.org/wiki/C%2B%2B">C++</a>.
+		</p>
+
+	<div class="alert alert-success" role="alert">
+ Code samples are available here as zip file: <br/>
+		 <a href="data/router/router.zip">router.zip</a>
+      </div>
+
+	</p> 
+
+      </div>
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="hipster"></a>
+        <h1>HIPSTER, HIeno Pelimoottor Seikkailupelien TEkemist vaRten</h1>
+	<p class="blog-post-meta">Spring, 2010</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://fi.wikipedia.org/wiki/C%2B%2B" role="button">C++</a>
+	<a class="btn btn-lg btn-primary" href="http://www.clanlib.org/" role="button">ClanLib</a>
+
+	<p></p>
+
+	<img src="project_pics/hipsterlogo.png" alt="Hipster" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+	<p>
+			Hipster Engine is a Point&Click Adventure Game Engine that was implemented by me and two of my student friends in Aalto University <a href="https://fi.wikipedia.org/wiki/C%2B%2B">C++</a> course in autumn 2010. We
+			shared the responsibility areas after planning the engine. My role was to implement graphics and interface managers. So I was responsible for input handling and rendering using a
+			C++ library <a href="http://www.clanlib.org/"> ClanLib </a>.
+			
+		<p>
+			I learned to design an engine that is composed of modules. I also improved my graphics skills and learned to use external libraries with C++.
+		</p>
+
+	<div class="alert alert-success" role="alert">
+	 Code samples are available here: <br/>
+		 <a href="data/hipster/GraphicsManager.cpp">GraphicsManager.cpp</a> <br/>
+		 <a href="data/hipster/InterfaceManager.cpp">InterfaceManager.cpp</a>
+      </div>
+
+	</p> 
+
+      </div>
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="ik"></a>
+        <h1>Inverse Kinematics - Bachelor's Thesis</h1>
+	<p class="blog-post-meta">March, 2011 - May, 2011</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://fi.wikipedia.org/wiki/C%2B%2B" role="button">C++</a>
+	<a class="btn btn-lg btn-primary" href="http://eigen.tuxfamily.org/index.php?title=Main_Page#Documentation" role="button">Eigen</a>
+
+	<p></p>
+
+	<img src="project_pics/ik.png" alt="IK" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+<p>
+		 This was my Bachelor's Thesis work. The programming part was optional but I thought that it is easier to understand how to implement IK solver when you implement it yourself. The 
+     implementation uses Levenberg-Marquardt algorithm to optimize the error vector, thus directing the end effector to desired location. 
+		</p>
+		<p>
+		This work made me understand how inverse kinematics works and it can be used to produce animation. It also taught me to use optimization algorithms in code. Kinematic chain has three joints. Work was implemented in <a href="https://fi.wikipedia.org/wiki/C%2B%2B">C++</a> using
+		<a href="http://eigen.tuxfamily.org/index.php?title=Main_Page#Documentation">Eigen</a> library
+		</p>
+
+	<div class="alert alert-success" role="alert">
+Demo is available on the following link as <a href="data/ik/ik.zip">zip</a> file. Demo works at least on Windows 7. The end effector can be moved by using arrow keys.
+      </div>
+
+	<div class="alert alert-success" role="alert">
+	You can see some code samples here: <br/>
+	  <a href="data/ik/main.cpp">main.cpp</a> <br/> <a href="data/ik/arc.h">arc.h</a>
+      </div>
+
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="rockthrowing"></a>
+        <h1>MultiTouch-demo: RockThrowing</h1>
+	<p class="blog-post-meta">September, 2011 - May, 2012</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://fi.wikipedia.org/wiki/C%2B%2B" role="button">C++</a>
+	<a class="btn btn-lg btn-primary" href="http://eigen.tuxfamily.org/index.php?title=Main_Page#Documentation" role="button">Box2D</a>
+
+	<p></p>
+
+	<img src="project_pics/rockthrowing.png" alt="rockthrowing" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+	<p>
+			This work was one of the demos we produced for our customer MultiTouch Oy in Aalto University course Software Development Project I. Demos will be used in exhibitions, where MultiTouch
+			demonstrates their products. Products are multitouch screens that can accept multiple touches simultaneously. I worked on this demo with two other programmers.
+		</p>
+		<p>
+		Purpose was to create a fun game suitable for multitouch screens. In the game the purpose is to protect cows from attacking UFOs by throwing rocks that can destroy UFOs. UFOs capture cows by beaming them. 
+		</p>
+		<p>
+		This project taught me about software engineering in a larger project corresponding real company projects. It also taught me about quality assurance methods and their importance in software production. In addition, it improved my <a href="https://fi.wikipedia.org/wiki/C%2B%2B">C++</a> skills and 2D graphics skills. We utilized <a href="http://box2d.org/">Box2D</a> library in the demo.
+		</p>
+
+
+
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="tankbasterds"></a>
+        <h1>Tank Basterds: Virtual Reality Environment</h1>
+	<p class="blog-post-meta">January, 2013 - May, 2013</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://fi.wikipedia.org/wiki/C_sharp" role="button">C#</a>
+	<a class="btn btn-lg btn-primary" href="http://unity3d.com/" role="button">Unity3D</a>
+	<a class="btn btn-lg btn-primary" href="http://ruisystem.net/" role="button">Ruis For Unity</a>
+	<a class="btn btn-lg btn-primary" href="http://www.autodesk.com/products/autodesk-3ds-max/overview" role="button">Autodesk 3D Studio Max</a>
+
+	<p></p>
+
+	<img src="project_pics/tankbasterds.png" alt="Tank Basterds: Virtual Reality Environment" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+<p>
+			This project was a game that me and my friend implemented for a virtual reality environment in Aalto University course Virtual Reality spring 2013. The project was implemented with free 
+      <a href="http://unity3d.com/">Unity 3D</a> and we utilized <a href="http://ruisystem.net/">RUIS for Unity</a> that provided us easy access to Kinect controlled skeletons 
+      and Playstation Move. Moreover, it allowed stereoscopic image with passive classes. Programming language used in the project was <a href="https://fi.wikipedia.org/wiki/C_sharp">C#</a>.
+		</p>
+		<p>
+		 The game itself is a multiplayer game created with a sense of humor where one player acts as a Kinect controlled soldier shooting with a rapid fire bazooka on the back part of a pickup.
+     The other player controls the pickup with Playstation controller. Enemies are mainly tanks but there are also choppers that drop parachutists as reinforcements. The goal in the 
+     game is to destroy the main enemy base with dynamites that can be found in the scene. The player can be promoted up to Colonel in the course of the game based on the points. 
+		</p>
+		<p>
+		This project was very useful for learning things required in game development. First, this game was my first a little bit bigger 3D game and it gave me a better view for creating such games. 
+    Second, it taught me how to utilize high level game development tools such as Unity. Third, although we found most of the models in the Internet we had to implement our own models because
+    we could not find suitable ones. So I learned also 3D modeling which was awesome with <a href="http://www.autodesk.com/products/autodesk-3ds-max/overview"> Autodesk 3D Studio Max </a>
+    that is provided for University students for free. For instance, in the image the watch tower and the wire fence are models that I created with Max.
+		</p>
+
+
+	<div class="alert alert-success" role="alert">
+To watch the YouTube video on Tank Basterds gameplay, click <a href = "https://www.youtube.com/watch?v=Ptq9F1nnUaI">here</a>.
+      </div>
+
+	<div class="alert alert-success" role="alert">
+		Here are some code samples from TankBasterds: <br/>
+			 <a href="data/tankbasterds/PickupController.cs">PickupController.cs</a> <br/>
+			  <a href="data/tankbasterds/PlayerAttributes.cs">PlayerAttributes.cs</a> 
+      </div>
+
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="bunny"></a>
+        <h1>Stanford Bunny</h1>
+	<p class="blog-post-meta">January, 2011 - May, 2011</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://fi.wikipedia.org/wiki/C%2B%2B">C++</a>
+	<a class="btn btn-lg btn-primary" href="http://www.opengl.org" role="button">OpenGL</a>
+	<a class="btn btn-lg btn-primary" href="http://glm.g-truc.net/" role="button">GLM</a>
+
+	<p></p>
+
+	<img src="project_pics/stanfordbunny.png" alt="Stanford Bunny" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+	<p>
+		In this work I learned about OpenGL, its pipeline and the shader system. We used GLSL to implement different shaders like toonshader and directional light.
+	</p>
+
+  <p> Keys for the application are following: F1 - Directional light, F2 - Toon shader, F3 - Procedural Shader (Fractal), F4 - Simple Multitexturing, 
+    F5 - Point light, F6 - Simple animation (beating bunny), F7 - Spotlight, F8 - Simple Bump mapping specular shader. Moreover, one can move in the scene with mouse and arrow keys. 
+    The texture mapping is a simple projection to xy - plane (x,y) -> (s,t), Textures used in the model are 256x256 size. 
+    </p>
+    
+		<p>
+		Work was implemented in <a href="https://fi.wikipedia.org/wiki/C%2B%2B">C++</a> using <a href="http://www.opengl.org"> OpenGL </a> and <a href="http://glm.g-truc.net/"> GLM </a> library. Work was project on Aalto University course Advanced course in Interactive Computer Graphics in spring 2011.
+		</p>
+
+
+	<div class="alert alert-success" role="alert">
+Demo and shader code samples are available on the following link as <a href="data/stanford/stanford.zip">zip</a> file. The demo runs on Windows. 
+      </div>
+
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="casino"></a>
+        <h1>Casino Card Game</h1>
+	<p class="blog-post-meta">January, 2009 - May, 2009</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://www.java.com/en/">Java</a>
+	<a class="btn btn-lg btn-primary" href="http://docs.oracle.com/javase/1.4.2/docs/api/javax/swing/package-summary.html" role="button">Swing</a>
+
+	<p></p>
+
+	<img src="project_pics/kasino.png" alt="Casino" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+	<p>
+		This was my first graphical work. It made me interested in graphics. My first work that included some kind of game logic. In this project I learned to design and implement a software from scratch.
+		</p>
+		<p>
+		The work was project work on TKK Java programming course. Implemented in <a href="https://www.java.com/en/">Java</a> using <a href="http://docs.oracle.com/javase/1.4.2/docs/api/javax/swing/package-summary.html"> Swing </a> library.
+		</p>
+
+
+	<div class="alert alert-success" role="alert">
+Demo is available on the following link as <a href="data/casino/Casino.zip">zip</a> file. Demo requires Java Runtime Environment installed.
+      </div>
+
+	<div class="alert alert-success" role="alert">
+	Some code samples: <br/>
+		 <a href="data/casino/CasinoGUI.java">CasinoGUI.java</a> <br/> 
+		 <a href="data/casino/Player.java">Player.java</a>
+      </div>
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="labyrinth"></a>
+        <h1>Ball Labyrinth</h1>
+	<p class="blog-post-meta">September, 2010 - May, 2010</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://www.java.com/en/">Java</a>
+	<a class="btn btn-lg btn-primary" href="http://www.processing.org/" role="button">Processing</a>
+
+	<p></p>
+
+	<img src="project_pics/pallolabyrintti.png" alt="Ball Labyrinth" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+	<p>
+		This was my first 3D game. It introduced me with 3D graphics and matrix stack. It was project work on Aalto University course Interactive Computer Graphics in fall 2010. Game was made by Processing
+		and <a href="https://www.java.com/en/">Java</a>.
+		</p>
+		<p>
+		Game is a labyrinth where you can control the ball by moving the labyrinth to different orientations. Purpose is to get to the goal and beware the holes.
+		</p>
+
+
+	<div class="alert alert-success" role="alert">
+Demo and code samples are available on the following link as <a href="data/labyrinth/labyrinth.zip">zip</a> file. Demo runs on <a href="http://www.processing.org/">Processing</a> environment.
+      </div>
+
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="raytracer"></a>
+        <h1>Ray Tracer</h1>
+	<p class="blog-post-meta">January, 2011 - May, 2011</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://www.java.com/en/">C++</a>
+	<a class="btn btn-lg btn-primary" href="http://www.libsdl.org/" role="button">SDL</a>
+
+	<p></p>
+
+	<img src="project_pics/raytracer.png" alt="Ray Tracer" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+<p>
+		This work introduced me with raytracing. It was project work on Aalto University course Advanced Course on Interactive Computer Graphics in spring 2011. Game was made using <a href="http://www.libsdl.org/"> SDL </a> and 
+		<a href="https://fi.wikipedia.org/wiki/C%2B%2B">C++</a>.
+		</p>
+		<p>
+		Our task was to implement different kinds of abilities to the raytracer. In the picture there is for example a mirror.
+		</p>
+		
+
+
+	<div class="alert alert-success" role="alert">
+Demo is available on the following link as <a href="data/raytracer/raytracer.zip">zip</a> file. The demo runs on Windows. 
+      </div>
+
+	<div class="alert alert-success" role="alert">
+	Code samples available here:  <br/>
+		 <a href="data/raytracer/mirror.cc">mirror.cc</a> <br/>
+		  <a href="data/raytracer/raytracer.cc">raytracer.cc</a>
+      </div>
+
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="plant"></a>
+        <h1>L-System: Plant</h1>
+	<p class="blog-post-meta">September, 2011 - December, 2011</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://www.java.com/en/">Java</a>
+	<a class="btn btn-lg btn-primary" href="http://www.processing.org/" role="button">Processing</a>
+
+	<p></p>
+
+	<img src="project_pics/plant.png" alt="L-System: Plant" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+<p>
+			This work was about producing different kinds of plants with L-systems. This was quite interesting work. Purpose was to make plants grow and look natural.
+		</p>
+		<p>
+		Work was implemented by using Processing and <a href="https://www.java.com/en/">Java</a>. School project on a self-study Computer Animation course in Aalto University in fall 2011.
+		</p>
+
+
+	<div class="alert alert-success" role="alert">
+Demo and code samples are available on the following link as <a href="data/plants/plants.zip">zip</a> file. Demo runs on <a href="http://www.processing.org/">Processing</a> environment. 
+      </div>
+
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="FFD"></a>
+        <h1>Free Form Deformation: Ball Pipe</h1>
+	<p class="blog-post-meta">September, 2011 - December, 2011</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://www.java.com/en/">Java</a>
+	<a class="btn btn-lg btn-primary" href="http://www.processing.org/" role="button">Processing</a>
+
+	<p></p>
+
+	<img src="project_pics/FFD.png" alt="FFD: Ball Pipe" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+<p>
+			This work was about deformation. Purpose was to implement a dynamic body, a pipe that deforms according to balls that it shoots.
+		</p>
+		<p>
+		Work was implemented by using Processing and <a href="https://www.java.com/en/">Java</a>. Work on Computer Animation course in fall 2011.
+		</p>
+
+
+	<div class="alert alert-success" role="alert">
+Demo and code samples are available on the following link as <a href="data/ballpipe/ballpipe.zip">zip</a> file. Demo runs on <a href="http://www.processing.org/">Processing</a> environment.  
+      </div>
+
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="particle"></a>
+        <h1>Particle System: Leaves</h1>
+	<p class="blog-post-meta">September, 2011 - December, 2011</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://www.java.com/en/">Java</a>
+	<a class="btn btn-lg btn-primary" href="http://www.processing.org/" role="button">Processing</a>
+
+	<p></p>
+
+	<img src="project_pics/particle.png" alt="Particle System: Leaves" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+<p>
+			This work taught me how to use particle systems to produce special effects. How to make particles move along fields. For the fields we used sinks, sources, vortices and linear fields.
+		</p>
+		<p>
+		Work was implemented by using Processing and <a href="https://www.java.com/en/">Java</a>. Work on Computer Animation course in fall 2011.
+		</p>
+
+
+	<div class="alert alert-success" role="alert">
+
+		Demo and code samples are available on the following link as <a href="data/particleSystem/particleSystem.zip">zip</a> file. Demo runs on <a href="http://www.processing.org/">Processing</a> environment.  
+      </div>
+
+
+    </div> <!-- /container -->
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="cloth"></a>
+        <h1>Cloth: Damper-String Mass Model</h1>
+	<p class="blog-post-meta">June, 2012</p>
+	
+	<a class="btn btn-lg btn-primary" href="https://fi.wikipedia.org/wiki/C%2B%2B">C++</a>
+	<a class="btn btn-lg btn-primary" href="http://www.opengl.org" role="button">OpenGL</a>
+
+	<p></p>
+
+	<img src="project_pics/cloth.png" alt="Cloth: Spring-Mass Model" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+<p>
+			As a hobby I was curious to test cloth simulation with simple damper spring mass model and noticed what is said about the model, ie the cloth stretches too much. The model was implemented in the summer 2012. I used 
+			<a href="https://fi.wikipedia.org/wiki/C%2B%2B">C++</a> and <a href="http://www.opengl.org">OpenGL</a> for the project.
+		</p>
+
+
+	<div class="alert alert-success" role="alert">
+Work available for Windows as <a href="data/cloth/cloth.zip">zip</a> file
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
