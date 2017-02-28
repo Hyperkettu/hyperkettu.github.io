@@ -101,20 +101,34 @@
 	<a class="btn btn-lg btn-primary" href="http://libsdl.org/" role="button">SDL2</a>
 	<a class="btn btn-lg btn-primary" href="https://www.libsdl.org/projects/SDL_image/" role="button">SDL2_Image</a>
 	<a class="btn btn-lg btn-primary" href="http://glm.g-truc.net/0.9.8/index.html" role="button">GLM</a>
+	<a class="btn btn-lg btn-primary" href="http://www.assimp.org/" role="button">Assimp</a>
 
 	<p></p>
 
-	<img src="project_pics/sdl2.png" alt="SDL2-GLEW" class="website width="600" height="500" align="middle" />
+	<img src="project_pics/sdl2.png" alt="SDL2-GLEW-App" class="website width="600" height="500" align="middle" />
 
 	<p></p>
 	
-        <p> SDL2-GLEW Demo Game is an application I programmed in winter/spring 2017 while learning about OpenGL's basic and advanced topics. In the project I utilized several technologies and libraries. OpenGL context
-			is created with SDL2. SDL2 also handles input, including keyboard and mouse. SDL2_Image library loads the textures and GLM library is used for mathematics, including matrices and vectors.</p>
+        <p> SDL2-GLEW Demo is an application I programmed in winter/spring 2017 while learning about OpenGL's basic and advanced topics. In the project I utilized several technologies and libraries. OpenGL context
+			is created with SDL2. SDL2 also handles input, including keyboard and mouse. SDL2_Image library loads the textures and GLM library is used for mathematics, including matrices and vectors. Model loading is done
+			with Assimp.</p>
 
 		<p> 
-			In the application I have implemented several shaders, render context switch, height map reading for the ground. Shaders can handle diffuse and specular maps. In the future also normal maps and parallax mapping
-			as the development continues.
+			In the application I have implemented following things: </br> </br>
+			Several shaders which can handle diffuse and specular maps. In the future also normal and parallax maps. </br>
+			Render context switch. </br> 
+			Height map reading for the ground. </br>
+			Texture loading using SDL2_Image. </br>
+			Model loading using Assimp. </br>
+			Bounding volume (sphere) and view frustum culling. </br>
+			Raycasting. </br>
+			Camera movement and rotation. </br>
+			Skybox as cube map. </br>
 		</p>
+		
+			<div class="alert alert-success" role="alert">
+	You can download the Mac version of the project <a href="data/sdl2/sdl2.zip">here</a> as zip file.</a>
+      </div>
 	   
 	<p>
 	  
