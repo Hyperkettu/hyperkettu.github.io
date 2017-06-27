@@ -59,6 +59,7 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Projects<span class="caret"></span></a>
                 <ul class="dropdown-menu">
+				<li><a href="#wordmanip"> WordManip - Word Manipulation Game</a></li>
 				<li><a href="#sdl2-glew">SDL2-GLEW Demo Game</a></li>
 				<li><a href="#whatthefish">What The Fish</a></li>
 				<li><a href="#escape">Escape</a></li>
@@ -87,7 +88,52 @@
       </div>
     </nav>
 
-			    <div class="container">
+	<div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<a name="wordmanip"></a>
+        <h1>WordManip - Word Manipulation Game</h1>
+	<p class="blog-post-meta">June, 2017 </p>
+	
+	<a class="btn btn-lg btn-primary" href="https://fi.wikipedia.org/wiki/C_sharp" role="button">C#</a>
+	<a class="btn btn-lg btn-primary" href="http://unity3d.com/" role="button">Unity3D</a>
+
+	<p></p>
+
+	<img src="project_pics/wordmanip.png" alt="Word Manip" class="website width="600" height="500" align="middle" />
+
+	<p></p>
+	
+        <p> WordManip is a word manipulation game where the purpose is to form words from others using operations including adding letters, removing or changing them. For instance, fought -> bought -> brought. 
+		In the example f was first changed to b and then r was added between b and o.</p>
+
+		<p> 
+			The game uses a trie data structure for handling and recognizing the words. The optimal paths and their lengths from other words to others were solved algorithmically. For instance, the optimal path from fought to brought is of length two.
+		</p>
+		
+			<div class="alert alert-success" role="alert">
+	You can download sample code from the game: </br> <a href="data/wordmanip/Trie.cs"> Trie.cs</a> </br>
+	<a href="data/wordmanip/GameManager.cs"> GameManager.cs</a>.
+      </div>
+	   
+	<p>
+	  
+	<!--  	<div class="alert alert-success" role="alert">
+	You can see the gameplay demo video on <a href="https://www.youtube.com/watch?v=DPCfhu3EG7s">YouTube</a>.
+      </div>
+
+	<div class="alert alert-success" role="alert">
+	You can download the Windows version of the game <a href="data/escape/Escape.zip">here</a> as zip file.</a>
+      </div> -->
+
+	</p> 
+
+      </div>
+
+    </div> <!-- /container -->
+	
+	<div class="container">
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
