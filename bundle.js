@@ -43967,6 +43967,7 @@ var MainPage = /** @class */ (function (_super) {
     function MainPage() {
         var _this = _super.call(this, 'Main Page') || this;
         _this.sprites = new Array();
+        _this.time = 0;
         _this.mainPageContainer = new PIXI.Container();
         return _this;
     }
@@ -43987,21 +43988,44 @@ var MainPage = /** @class */ (function (_super) {
     MainPage.prototype.exit = function () {
     };
     MainPage.prototype.updateState = function (dt, fsm) {
+        this.time += 0.01 * dt;
         this.sprites.forEach(function (sprite) {
             sprite.update(dt);
         });
+        var v2 = this.filter.uniforms.foxPosition;
+        v2[0] = this.sprites[0].sprite.x + this.sprites[0].sprite.width / 2;
+        v2[1] = this.sprites[0].sprite.y + this.sprites[0].sprite.height / 2;
+        this.filter.uniforms.foxPosition = v2;
+        v2 = this.filter.uniforms.foxPosition2;
+        v2[0] = this.sprites[1].sprite.x + this.sprites[1].sprite.width / 2;
+        v2[1] = this.sprites[1].sprite.y + this.sprites[1].sprite.height / 2;
+        this.filter.uniforms.foxPosition2 = v2;
+        v2 = this.filter.uniforms.foxPosition3;
+        v2[0] = this.sprites[1].sprite.x + this.sprites[2].sprite.width / 2;
+        v2[1] = this.sprites[2].sprite.y + this.sprites[2].sprite.height / 2;
+        this.filter.uniforms.foxPosition3 = v2;
+        v2 = this.filter.uniforms.resolution;
+        v2[0] = main.app.screen.width;
+        v2[1] = main.app.screen.height;
+        this.filter.uniforms.resolution = v2;
+        this.filter.uniforms.scale = this.sprites[0].sprite.scale.x;
     };
     MainPage.prototype.onResize = function (width, height) {
-        this.topBar.scale.set(1, 1);
-        this.topBar.width = width;
-        this.topBar.height = 50;
-        this.topBar.y = 0;
-        this.topBarLine.width = width;
-        this.topBarLine.height = 5;
-        this.topBarLine.y = 45;
-        this.text1.x = width / 10;
-        //  this.text1.width = width / 8;
-        this.text1.height = 45;
+        this.bg.width = width;
+        this.bg.height = height;
+        /* this.topBar.scale.set(1,1);
+         this.topBar.width = width;
+         this.topBar.height = 50;
+         this.topBar.y = 0;
+ 
+         this.topBarLine.width = width;
+         this.topBarLine.height = 5;
+         this.topBarLine.y = 45;
+ 
+         this.text1.x = width / 10;
+       //  this.text1.width = width / 8;
+         this.text1.height = 45;
+ */
     };
     MainPage.prototype.init = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -44020,14 +44044,18 @@ var MainPage = /** @class */ (function (_super) {
     };
     MainPage.prototype.initImages = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var i;
+            var background, shaderFrag, filter, i;
             return __generator(this, function (_a) {
-                this.topBar = new PIXI.Sprite(PIXI.Texture.WHITE);
-                this.topBar.tint = 0x333388;
-                this.mainPageContainer.addChild(this.topBar);
-                this.topBarLine = new PIXI.Sprite(PIXI.Texture.WHITE);
-                this.topBarLine.tint = 0x883333;
-                this.mainPageContainer.addChild(this.topBarLine);
+                background = new PIXI.Sprite(PIXI.Texture.WHITE);
+                background.width = main.app.screen.width;
+                background.height = main.app.screen.height;
+                main.app.stage.addChild(background);
+                this.bg = background;
+                shaderFrag = "\n            precision mediump float;\n\n            uniform vec2 foxPosition; \n            uniform vec2 foxPosition2;\n            uniform vec2 foxPosition3;\n            uniform vec2 resolution;\n            uniform float scale;\n\n            void main() {\n\n                vec2 pixelPos = vec2(gl_FragCoord.x, resolution.y - gl_FragCoord.y);\n                if(distance(pixelPos, foxPosition) + distance(pixelPos, foxPosition2) < 1000.0 * scale &&\n                distance(pixelPos, foxPosition) + distance(pixelPos, foxPosition2) > 900.0 * scale) {\n\n                    gl_FragColor = vec4(foxPosition / resolution, 0, 0.5);\n                } else {\n\n                    if(distance(foxPosition3, foxPosition) + distance(foxPosition3, foxPosition2) < 900.0 * scale) {\n                        gl_FragColor = vec4(foxPosition3 / resolution, 0, 0.5);\n                    } else {\n                        gl_FragColor = vec4(0,0,0,0);\n                    }\n                }\n            }\n        ";
+                filter = new PIXI.Filter(null, shaderFrag);
+                // Add the filter
+                this.bg.filters = [filter];
+                this.filter = filter;
                 // this.foxImage = PIXI.Sprite.fromImage('kettu-small.png');
                 for (i = 0; i < 140; i++) {
                     this.sprites.push(new sprite_1.Sprite('kettu-small.png', this.mainPageContainer));
@@ -44045,9 +44073,9 @@ var MainPage = /** @class */ (function (_super) {
             stroke: "#030103",
             strokeThickness: 5
         });
-        this.text1 = new PIXI.Text('Olli Kettunen', style);
+        this.text1 = new PIXI.Text('Pelaa peliä', style);
         this.mainPageContainer.addChild(this.text1);
-        this.text1.buttonMode = true;
+        // this.text1.buttonMode = true;
     };
     return MainPage;
 }(statemachine_1.State));
