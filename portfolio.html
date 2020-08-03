@@ -34,7 +34,7 @@
     <![endif]-->
   </head>
 
-  <body style="background-color:#fff;">
+  <body style="background-image: url('b.png');">
 
     <!-- Static navbar -->
 
@@ -59,6 +59,7 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Projects<span class="caret"></span></a>
                 <ul class="dropdown-menu">
+				<li><a href="#webgl2"> WebGL2 Renderer</a></li>
 				<li><a href="#wordmanip"> WordManip - Word Manipulation Game</a></li>
 				<li><a href="#sdl2-glew">Physically Based Renderer</a></li>
 				<li><a href="#whatthefish">What The Fish</a></li>
@@ -66,7 +67,6 @@
                   <li><a href="#bittetris">Bittetris</a></li>
 		  <li><a href="#mooncat">MoonCat: Moonlandia</a></li>
                   <li><a href="#bet">Betting Analyzer</a></li>
-                  <li><a href="#KD-tree">KD-Tree</a></li>
 		  <li><a href="#phorm">Phorm: Multi-platform Game</a></li>
 		  <li><a href="#router">Router</a></li>
 		  <li><a href="#hipster">Hipster Engine</a></li>
@@ -88,7 +88,85 @@
 		</div><!--/.nav-collapse -->
 		
       </div>
-    </nav>
+	</nav>
+	
+	<div class="container">
+
+		<!-- Main component for a primary marketing message or call to action -->
+		<div class="jumbotron" style="background-color:rgb(12, 19, 81)">
+	  <a name="webgl2"></a>
+		  <h2>WebGL2 Renderer</h2>
+	  <p class="blog-post-meta">June, 2019 - Present </p>
+	  
+	  <a class="btn btn-lg btn-primary" href="https://www.typescriptlang.org/" role="button">TypeScript</a>
+	  <a class="btn btn-lg btn-primary" href="https://webgl2fundamentals.org/" role="button">WebGL2</a>
+	  <a class="btn btn-lg btn-primary" href="http://www.html5.com" role="button">HTML5</a>
+  
+	  <p></p>
+  
+	  <img src="project_pics/webgl.png" alt="WebGL2" class="img-responsive" />
+  
+			<p></p>
+
+	  <p>
+				WebGL2 Renderer is a project that I started in the summer 2019 during my time at Quicksave Interactive. At Quicksave we used TypeScript for everything and as a graphics 
+				programmer I was curious to test to implement a WebGL2 based 3D renderer with TypeScript. I integrated Quicksave's 2D UI system to the renderer but after I left Quicksave
+				I removed that from the renderer and made my own user interface renderer to it. After Quicksave time I have also continued to implement other features to this project.
+
+	  </p>
+		  <p> 
+				By the time of writing this the renderer implements following features: </br></br>
+
+				3D scene graph from which the objects a collected to arrays for both opaque and transparent object for rendering. <br>
+				Physically Based Shaders for rendering static and morphed geometry. (also skinned meshes in the future) <br>
+				Shadow map rendering for point lights and directional light <br>
+				Post processing effect, including bloom, gray scale and tone mapping <br>
+				2D overlay rendered using a texture atlas render texture <br>
+				An 2D animation system for the overlay to animate sprite position, rotation, scale and transparency with easings <br>
+				Skybox rendering <br>
+				L-system for generating trees like in the picture above <br>
+				Instanced rendering for rendering a lot of objects like grass <br>
+				Height map generation from a height texture <br>
+				Raycasting through the screen for picking the objects. <br>
+				Shaders share uniform buffer objects <br>
+				Technique file for shaders for handling shader permutations <br>
+				Scenes are loaded from JSON file <br>
+				Materials are loaded from JSON material file <br>
+				Meshes are also loaded from JSON mesh file (static and morphed meshes) <br>
+				Billboards for textures and floating texts <br>
+				Terrain rendering with terrain shader <br>
+				Vertex shader displacement mapping as WebGL2 does not support tessellation shaders <br>
+				Particle systems <br>
+		  </p>
+  
+		  <p> 
+
+		  </p>
+		  
+			  <div class="alert alert-warning" role="alert">
+	  You can download sample code from the renderer: </br> 
+	  <a href="data/webgl2/billboardtext.ts"> billboardtext.ts </a> </br>
+	  <a href="data/webgl2/cubemaprenderer.ts"> cubemaprenderer.ts </a> </br> 
+	  <a href="data/webgl2/layout.ts"> layout.ts </a> </br>
+	  <a href="data/webgl2/pointlightshadowmap.ts"> pointlightshadowmap.ts </a> </br>
+	  <a href="data/webgl2/raycast.ts"> raycast.ts </a>
+		</div>
+		 
+	  <p>
+		
+	  <!--  	<div class="alert alert-warning" role="alert">
+	  You can see the gameplay demo video on <a href="https://www.youtube.com/watch?v=DPCfhu3EG7s">YouTube</a>.
+		</div>
+  
+	  <div class="alert alert-warning" role="alert">
+	  You can download the Windows version of the game <a href="data/escape/Escape.zip">here</a> as zip file.</a>
+		</div> -->
+  
+	  </p> 
+  
+		</div>
+  
+	  </div> <!-- /container -->
 
 	<div class="container">
 
@@ -401,43 +479,6 @@ Code sample about Mooncat available here: <br/>
 	Bet Analyzer applicaton can be downloaded (Windows) as a zip file from <a href="https://dl.dropboxusercontent.com/u/59215222/BetAnalyzer/BetAnalyzer.zip">here</a>. 
       </div>
 
-
-	</p> 
-
-      </div>
-
-    </div> <!-- /container -->
-
-    <div class="container">
-
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron" style="background-color:rgb(12, 19, 81)">
-	<a name="KD-tree"></a>
-        <h2>KD-Tree Acceleration Structure</h2>
-	<p class="blog-post-meta">August, 2015</p>
-	
-	<a class="btn btn-lg btn-primary" href="https://fi.wikipedia.org/wiki/C%2B%2B" role="button">C++</a>
-
-	<p></p>
-
-	<img src="project_pics/KD.png" alt="KD-tree" class="img-responsive" />
-
-	<p></p>
-	
-	<p>
-		Implementing a KD-tree acceleration structure for a simple raytracer was an assignment by Frozenbyte for their recruitment process that ultimately never happened in August 2015. During the 
-		assignment I learned to find and fix bugs which had been put into the project to add realism. Moreover, I learned about KD-trees and their importance as an acceleration structure in raytracing. Since I haven't earlier
-		impelemented a real KD-tree, this was a useful exercise. The task was also to compare KD-tree's performance with model files like the dragon. The files had different amounts of polygons.
-		</p>
-		
-		<p>
-		The KD-tree exercise was implemented in <a href="https://fi.wikipedia.org/wiki/C%2B%2B">C++</a>  so this exercise was also about maintaining my C++ skills and having a mathematical problem to solve. 
-		</p>
-
-	<div class="alert alert-warning" role="alert">
-	You can see the code for the KD-tree here: <br/> 
-		<a href="data/KD-tree/KD-tree.zip">KD-Tree.zip</a> 
-      </div>
 
 	</p> 
 
